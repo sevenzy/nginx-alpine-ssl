@@ -8,6 +8,7 @@ This will create a basic nginx ssl enabled http server that runs on alpine.
 
 ## Options 
 -e CRT={your-cert-name.crt} - allows you to specify your own `crt` file  (note there is a default for mydomain.com).
+
 -e KEY={your-private-key.key} - allows you to specify your own `key` file (note there is a default for mydomain.com).
 
 ## Generate Your Own Self-Signed SSL
