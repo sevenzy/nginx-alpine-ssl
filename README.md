@@ -13,7 +13,7 @@ This will create a basic nginx ssl enabled http server that runs on alpine.
 
 ## Generate Your Own Self-Signed SSL
 
-docker run --rm -v $PWD/certkey:/usr/share alpine /bin/sh -c "apk add openssl; openssl req -x509 -nodes -days 365 -subj \"/C=CA/ST=QC/O=Company, Inc./CN=newdomain.com\" -addext \"subjectAltName=DNS:newdomain.com\" -newkey rsa:2048 -keyout /usr/share/new-selfsigned.key -out /usr/share/new-selfsigned.crt;"
+docker run --rm -v $PWD/certkey:/usr/share alpine /bin/sh -c "apk add openssl; openssl req -x509 -nodes -days 365 -subj \"/C=CA/ST=QC/O=Company, Inc./CN=mewdomain.com\" -addext \"subjectAltName=DNS:newdomain.com\" -newkey rsa:2048 -keyout /usr/share/new-selfsigned.key -out /usr/share/new-selfsigned.crt;"
 
 ## Example Run
 
